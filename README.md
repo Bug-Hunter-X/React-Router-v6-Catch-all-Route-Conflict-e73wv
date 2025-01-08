@@ -1,0 +1,3 @@
+# React Router v6 Catch-all Route Conflict
+
+This repository demonstrates a common issue in React Router v6 where a catch-all route (`/*`) interferes with other routes.  The `App.js` file contains the buggy code, while the solution is incorporated into the same file.  The problem arises when the catch-all route is placed before other routes. The solution involves placing the catch-all route last in the Routes component to ensure it only matches paths not matched by other, more specific routes.
